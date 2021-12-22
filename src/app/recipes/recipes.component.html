@@ -1,0 +1,13 @@
+<h2>My Recipies</h2>
+<div class="table-row">
+    <ul class="rectangle">
+    <li *ngFor="let recipe of recipies"
+        [class.selected]="recipe === selectedRecipe"
+        (click)="onSelect(recipe)">
+            <span class="badge">{{recipe.id}}</span>
+            <span class="name"> {{recipe.name}}</span>
+            <button (click)="$event.stopPropagation();onAdd(recipe)">+</button>                
+    </li>
+    </ul>
+    <app-recipe-detail [recipe]="selectedRecipe"></app-recipe-detail>
+</div>

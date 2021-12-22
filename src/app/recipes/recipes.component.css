@@ -1,0 +1,63 @@
+.rectangle li {
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 0.25em;
+    margin-bottom: 0.25em;
+    height: 1.6em;
+    border-radius: 4px;
+    left: 0%;
+    width: 23%;
+}
+.rectangle {
+    float: left;
+    list-style-type:none;
+    padding: 0;	
+	width: 100%;
+	vertical-align: top;
+    border-right: 30px solid #fff;
+}
+
+span {
+    display: inline-block;
+}
+button {
+    display:inline-block;
+    color:black;
+    border-radius: .25em;
+    font-size: 16px;
+    height: 2em;
+    width: 2em;
+    transition:ease-in-out .2s;
+    background-color: rgb(12, 134, 59);
+    border-style: none;
+}
+button {
+    position: absolute;
+    left: 105%;
+}
+
+.rectangle .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#405061;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+    width: 1em;
+}
+  
+.rectangle {
+    width: 100%;
+    cursor: pointer;
+    display: inline-block;
+}
+

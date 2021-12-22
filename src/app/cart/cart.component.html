@@ -1,0 +1,7 @@
+<a class = 'back button' routerLink="/">BACK</a>
+<ul class = 'cart rectangle' *ngFor="let ingredient of cart">
+    <li class = 'ingredient'>
+        <p>{{ingredient.name}} {{ingredient.number_measure}}</p>
+        <button class = 'delete_button' (click)="onDelete(ingredient)">delete</button>
+    </li>
+</ul>

@@ -1,0 +1,17 @@
+<div *ngIf="recipe" class='details'>
+
+  <h2>{{recipe.name | uppercase}} Details</h2>
+  <div>
+    <label for="recipe-name">Recipe name: </label>
+    <span id="recipe-name"> {{recipe.name}}</span>
+    <img src={{recipe.image_url}} alt={{recipe.name}}>
+    <ol class="ingredients">
+        <li *ngFor="let ingredient of recipe.ingredients">
+            <span class="badge"> {{ingredient.name}} </span>{{ingredient.number_measure}}
+        </li>
+    </ol>
+    <div><label for="recipe-steps">Steps: </label></div>
+    <div id="recipe-steps"> {{recipe.steps}}</div>
+  </div>
+
+</div>

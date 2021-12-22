@@ -1,0 +1,7 @@
+.details {
+    position:absolute;
+    left: 30%;
+    display: table-column;
+	vertical-align: top;
+	padding: 0;
+}
